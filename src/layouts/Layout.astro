@@ -1,3 +1,9 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+---
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -8,10 +14,9 @@
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-		<a href="/about/">Sobre mí</a>
-		<a href="/blog/">Blog</a>
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 
@@ -23,3 +28,6 @@
 		height: 100%;
 	}
 </style>
+<script>
+	import "../scripts/menu.js";
+</script>
