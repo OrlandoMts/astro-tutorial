@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const pageTitle = "Sobre mí";
@@ -22,7 +22,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<Layout>
+<BaseLayout pageTitle={pageTitle}>
   <h1>{pageTitle}</h1>
   <h2>... y mi nuevo sitio web Astro!</h2>
   <p>Estoy trabajando a través del tutorial de introducción de Astro. Esta es la segunda página de mi sitio web, y es la primera que construí yo mismo!</p>
@@ -58,4 +58,4 @@ const textCase = "uppercase";
     	text-transform: var(--textCase)
 		}
 	</style>
-</Layout>
+</BaseLayout>

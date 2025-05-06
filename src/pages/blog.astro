@@ -1,12 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 
 const pageTitle = "Mi blog de aprendizaje de Astro";
 
 ---
 
-<Layout>
+<BaseLayout pageTitle={pageTitle}>
 <h1>{pageTitle}</h1>
 <p>Este es donde publicaré sobre mi viaje aprendiendo Astro.</p>
 
@@ -15,4 +15,4 @@ const pageTitle = "Mi blog de aprendizaje de Astro";
 	<li><a href="/posts/post-2/">Post 2</a></li>
   <li><a href="/posts/post-3/">Post 3</a></li>
 </ul>
-</Layout>
+</BaseLayout>
