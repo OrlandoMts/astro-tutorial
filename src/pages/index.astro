@@ -1,4 +1,5 @@
 ---
+import Greeting from '../components/Greeting';
 import Welcome from '../components/Welcome.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -10,4 +11,5 @@ import "../styles/global.css";
 
 <BaseLayout pageTitle="Bienvenido a mi blog">
 	<Welcome />
+	 <Greeting client:load messages={["Hola", "Qué tal", "Hola a todos"]} />
 </BaseLayout>
